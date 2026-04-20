@@ -6,17 +6,13 @@
 
 ## Project Thumbnail
 
-![Voice Command Game](https://placehold.co/1280x640/1a1a1a/9b30d9?text=Voice+Command+Game&font=monospace)
-
-> *(Replace this with a screenshot or GIF of your game!)*
+![Voice Command Game](gamethumnail.png)
 
 ---
 
 ## Demo Video
 
-[![Watch the Demo](https://placehold.co/640x360/1a1a1a/9b30d9?text=▶+Watch+Demo&font=monospace)](https://your-demo-link-here.com)
-
-> *(Replace this link with your demo video URL)*
+(https://youtu.be/LlikJFbui4w)
 
 ---
 
@@ -41,13 +37,13 @@ This project was inspired by games like **Mage Arena** and **REPO**, which use v
 ## How Does It Work?
 
 ```
-🎙️  You speak a command
+You speak a command
         ↓
-🌐  Chrome's Web Speech API converts your voice to text
+Chrome's Web Speech API converts your voice to text
         ↓
-🔗  A JavaScript .jslib plugin bridges the browser and Unity
+A JavaScript .jslib plugin bridges the browser and Unity
         ↓
-🤖  The robot platform receives the command and moves
+The robot platform receives the command and moves
 ```
 
 | Command | Action |
@@ -64,7 +60,7 @@ This project was inspired by games like **Mage Arena** and **REPO**, which use v
 
 I've always been fascinated by games that use unconventional input methods. After playing **Mage Arena** and **REPO** — both of which use voice as a core gameplay mechanic — I started wondering: *could I build something like that myself?*
 
-I wanted to see if voice recognition could feel responsive and fun in a platformer context, and whether I could pull it off entirely in the browser without the player needing to download anything. The result is this game — a cooperative puzzle platformer where one mechanic (your voice) controls everything.
+I wanted to see if voice recognition could feel responsive and fun in a platformer context, and whether I could pull it off entirely in the browser without the player needing to download anything. The result is this game — a platformer where one mechanic (your voice) controls everything.
 
 ---
 
@@ -72,11 +68,9 @@ I wanted to see if voice recognition could feel responsive and fun in a platform
 
 The game features original pixel art characters hand-crafted for the project:
 
-| Idle | Walk | Run |
-|---|---|---|
-| ![Idle](https://placehold.co/200x200/2a2a2a/ff9a3c?text=Idle&font=monospace) | ![Walk](https://placehold.co/200x200/2a2a2a/ff9a3c?text=Walk&font=monospace) | ![Run](https://placehold.co/200x200/2a2a2a/ff9a3c?text=Run&font=monospace) |
-
-> *(Replace placeholders with your actual sprite screenshots from the presentation)*
+| Idle | Running | Falling | Jumping |
+|---|---|---|---|
+| ![Idle](MCIdle.gif) | ![Running](GirlRunning.gif) | ![Falling](MCFalling.png) | ![Jumping](MCJump.png) |
 
 ---
 
@@ -95,15 +89,15 @@ Many bugs only surfaced in the final WebGL build and not during Editor play mode
 
 ## What I Learned
 
-- How to connect the browser's Web Speech API to Unity using a custom JavaScript `.jslib` plugin
-- Setting up a clean level system with smooth transitions between scenes using `DontDestroyOnLoad`
+- How to connect the browser's **Web Speech API** to Unity using a custom JavaScript `.jslib` plugin
 - How to diagnose and fix WebGL-specific issues that don't appear in the Unity Editor, including using `#if UNITY_WEBGL && !UNITY_EDITOR` guards
+- Designing scalable systems using the **singleton pattern** for persistent managers across scenes
 
 ---
 
 ## Final Presentation
 
-📊 [View the Final Presentation Slides](https://canva.link/mnfl6258kcsbk9f)
+[View the Final Presentation Slides](https://canva.link/mnfl6258kcsbk9f)
 
 ---
 
@@ -126,4 +120,4 @@ Many bugs only surfaced in the final WebGL build and not during Editor play mode
 1. Open the game in **Chrome** or **Edge** *(Firefox not supported)*
 2. Click **Start** and allow microphone access when prompted
 3. Say **"right"**, **"left"**, **"up"**, or **"down"** to move the robot platform
-4. Guide your character through the obstacles to reach the goal
+4. Guide your character through the obstacles to reach the goal!
