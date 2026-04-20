@@ -1,9 +1,12 @@
 using UnityEngine;
 using System.Runtime.InteropServices;
+using TMPro;
+using Unity.VisualScripting.InputSystem;
 
 public class SpeechManager : MonoBehaviour
 {
     public static SpeechManager Instance;
+    public TextMeshProUGUI debugText;
 
     public RobotController robot;
 
@@ -37,6 +40,11 @@ public class SpeechManager : MonoBehaviour
     public void OnSpeechResult(string word)
     {
         Debug.Log("Heard: " + word);
+
+        if (debugText != null)
+        {
+            debugText.text = "Output: " + word;
+        }
 
         if (robot == null)
         {
