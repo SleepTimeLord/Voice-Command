@@ -8,7 +8,7 @@
   - Layers:
     - Default, TransparentFX, Ignore Raycast, Obstacle, Water, UI, Death
 - Active game object:
-  - Name: SpeechManager
-  - Tag: Untagged
-  - Layer: Default
+  - Name: Square (6)
+  - Tag: Surface
+  - Layer: Obstacle
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
