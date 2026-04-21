@@ -121,3 +121,9 @@ Many bugs only surfaced in the final WebGL build and not during Editor play mode
 2. Click **Start** and allow microphone access when prompted
 3. Say **"right"**, **"left"**, **"up"**, or **"down"** to move the robot platform
 4. Guide your character through the obstacles to reach the goal!
+
+---
+
+## Play Link
+
+(https://sleeptime.itch.io/voice-command-game)
